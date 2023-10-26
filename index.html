@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestor Contactos</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gestor de Contactos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="div-titulo">
+      <h1>Añadir Contactos</h1>
+    </div>
+
+    <div class="contenedor">
+      <div class="div-lista">
+        <h2>Datos del Contacto</h2>
+
+        <form action="#" id="lista">
+          <input type="text" id="nombre" placeholder="Ingresa el nombre" />
+          <input type="text" id="apellido" placeholder="Ingresa el apellido" />
+          <input
+            type="text"
+            id="telefono"
+            placeholder="Ingresa el número de teléfono"
+          />
+          <button type="submit" id="btnAgregar">
+            Agregar <i class="fas fa-person-circle-plus"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="div-listado">
+        <h2>Lista De Contactos</h2>
+        <div class="div-contactos"></div>
+      </div>
+    </div>
+    <script src="./JS/main.js"></script>
+  </body>
 </html>
