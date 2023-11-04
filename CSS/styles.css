@@ -7,12 +7,12 @@
 }
 
 body {
-    background-color: rgb(199, 171, 226);
+    background-color:  rgb(0, 0, 0);
 }
 
 /*ESTILO DE CONTENEDOR Y TITULO*/
 .div-titulo {
-    color:rgb(12, 12, 12);
+    color:rgb(255, 255, 255);
     font-family: Bell mt black;
     width: 100%;
     height: 100px;
@@ -26,8 +26,133 @@ body {
 }
 
 .contenedor {
+    color:white;
     width: 100;
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
+}
+
+/*ESTILOS DE FORMULARIO*/
+
+.contenedor .div-lista{
+    width: 40%;
+    height:300px;
+    margin: 15px 15px;
+    background-color: #58646d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor .div-lista form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .div-lista form input,
+.contenedor .div-lista form button {
+    width: 40%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+
+#btnAgregar {
+    padding: 0.5rem 1.5rem;
+    width: 50%;
+    background-color: #ec0e0e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.contenedor .div-listado {
+    width: 100%;
+    height: calc(100% - 50px);
+    margin: 15px 15px;
+    background-color: rgb(25, 56, 156); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);   
+}
+
+.contenedor .div-listado .div-contactos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0 30px;
+}
+
+.contenedor .div-listado .div-contactos p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #f5efef;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    margin: 0 5px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-editar {
+    background-color: green;
+}
+
+.btn-eliminar {
+    background-color: red;
+}
+
+
+.contenedor .div-listado h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+
+.button {
+
+    width: 40px;
+    height: 40px;
+    background: #777;
+    border: 2px solid #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
 }
